@@ -1,6 +1,7 @@
 .class {
   width: 55%;
   margin: auto;
+  padding-top: 100px;
 }
 
 .class__nameBox {

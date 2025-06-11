@@ -13,3 +13,6 @@
   flex-wrap: wrap;
   width: 100vw;
 }
+.dashboard {
+  padding-top: 100px;
+}

@@ -4,6 +4,7 @@ import Home from "./screens/Home";
 import Dashboard from "./screens/Dashboard";
 import Navbar from "./components/Navbar";
 import Class from "./screens/Class";
+import Header from "./components/Header";
 
 function App() {
   return (

@@ -17,7 +17,7 @@ function Dashboard() {
         .collection("users")
         .where("uid", "==", user.uid)
         .onSnapshot((snapshot) => {
-          setClasses(snapshot?.docs[0]?.data()?.enrolledClassrooms);
+          setClasses(snapshot?.docs?.[0]?.data()?.enrolledClassrooms);
         });
       // 👇🏻 below code doesn't update realtime, so updated to snapshot listener
       // const userData = querySnapshot.docs[0].data();
@@ -39,13 +39,13 @@ function Dashboard() {
 
   return (
     <div className="dashboard">
-      {classes.length === 0 ? (
+      {classes?.length === 0 ? (
         <div className="dashboard__404">
           No classes found! Join or create one!
         </div>
       ) : (
         <div className="dashboard__classContainer">
-          {classes.map((individualClass) => (
+          {classes?.map((individualClass) => (
             <ClassCard
               creatorName={individualClass.creatorName}
               creatorPhoto={individualClass.creatorPhoto}

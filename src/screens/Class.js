@@ -18,13 +18,7 @@ function Class() {
   const { id } = useParams();
   const history = useHistory();
 
-  /*
-    PLAN: Create a snapshot listener and fill in the data into classData, 
-    and then map through it during render
-  */
-
   useEffect(() => {
-    // reverse the array
     let reversedArray = classData?.posts?.reverse();
     setPosts(reversedArray);
   }, [classData]);

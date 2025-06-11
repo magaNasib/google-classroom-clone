@@ -1,20 +1,18 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAwC3qO_f1vXK2C7KdmbXt3XIYMk7qeREY",
-  authDomain: "classroom-clone-ed3cd.firebaseapp.com",
-  projectId: "classroom-clone-ed3cd",
-  storageBucket: "classroom-clone-ed3cd.appspot.com",
-  messagingSenderId: "846495130260",
-  appId: "1:846495130260:web:565176629f57de3e010a81",
-  measurementId: "G-8SR3368XL1",
+  apiKey: "AIzaSyCBogyextpChCueUnFoJOTNVIVMFqZz6-k",
+  authDomain: "learnspace-301e8.firebaseapp.com",
+  projectId: "learnspace-301e8",
+  storageBucket: "learnspace-301e8.firebasestorage.app",
+  messagingSenderId: "266201480329",
+  appId: "1:266201480329:web:945b584b77341d74ab1a58",
+  measurementId: "G-ZSHVVXC8SV",
 };
-
 const app = firebase.initializeApp(firebaseConfig);
 const auth = app.auth();
 const db = app.firestore();
 const googleProvider = new firebase.auth.GoogleAuthProvider();
-// Sign in and check or create account in firestore
 const signInWithGoogle = async () => {
   try {
     const response = await auth.signInWithPopup(googleProvider);

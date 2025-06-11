@@ -1,6 +1,6 @@
 .classCard__upper {
   background-color: #008d7d;
-  height: 90px;
+  height: 120px;
   position: relative;
   color: white;
   padding: 10px;
@@ -32,7 +32,7 @@
 }
 
 .classCard__creatorName {
-  position: absolute;
+  /* position: absolute; */
   bottom: 12px;
   font-size: 15px;
 }
